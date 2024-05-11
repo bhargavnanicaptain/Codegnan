@@ -258,4 +258,24 @@ body {
 
 .jap {
   text-decoration: none;
+
+
+}
+
+.para7 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn2 {
+  background-color: #1ab69d;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn2:hover {
+  background-color: #1ab69d;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
 }

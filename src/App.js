@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
+
 import code from './Codegnan.png';
+import Team from './Team.js';
 
 const App = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -13,6 +14,289 @@ const App = () => {
   const [isOpen8, setIsOpen8] = useState(false);
   return (
     <>
+      <style>
+        {`* {
+  font-family: sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.sec1 {
+  background-color: #1f216e;
+  margin-top: 10%;
+}
+
+.span1 {
+  color: #1ab69d;
+}
+
+.head1 {
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+  padding-top: 7%;
+  /* Adjust as needed */
+  margin-left: 5%;
+}
+
+
+.para1 {
+  color: whitesmoke;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.para2 {
+  color: whitesmoke;
+
+  margin-left: 5%;
+  font-size: 20px;
+
+}
+
+.img1 {
+  width: 100%;
+  margin-left: 15%;
+}
+
+.list-unstyled {
+  list-style: none;
+  /* Remove default bullets */
+  padding-left: 0;
+  /* Remove default left padding */
+}
+
+.btn1 {
+  background-color: #1ab69d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  margin-left: 3%;
+  margin-bottom: 15%;
+}
+
+.btn1:hover {
+  background-color: #ee4a62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+}
+
+.fa-arrow-right {
+  color: white;
+}
+
+.card1 {
+  width: 300px;
+  height: 100px;
+  margin-left: 25%;
+  border: 1px solid grey;
+}
+
+.card2 {
+  width: 300px;
+  height: 100px;
+
+  border: 1px solid grey;
+}
+
+.card3 {
+  width: 300px;
+  height: 100px;
+
+  border: 1px solid grey;
+  margin-left: -22%;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.card-body img {
+  width: 60px;
+  margin-right: 10px;
+  /* Adjust spacing between image and text */
+}
+
+.card-body div {
+  display: flex;
+  flex-direction: column;
+}
+
+.para4 {
+  /* margin-top: 3px; */
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.para3 {
+  color: grey;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sec2 {
+  margin-top: 5%;
+}
+
+.img2 {
+  margin-bottom: 1%;
+}
+
+.card {
+  margin-bottom: 20px;
+  /* Adjust as needed */
+}
+
+.para5 {
+  color: #2b2929;
+  font-weight: 500;
+}
+
+.card4,
+.card5,
+.card6,
+.card7 {
+  width: 300px;
+  height: 100px;
+
+  border: 1px solid grey;
+}
+
+.fa-star {
+  color: gold;
+}
+
+.fa-calendar-days {
+  color: #ee4a62;
+}
+
+.span2 {
+  color: #1ab69d;
+  font-weight: bold;
+}
+
+.c1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cl1 {
+  color: #ee4a62;
+  font-weight: bold;
+  margin-top: -6%
+}
+
+.cl1:hover {
+  color: #1ab69d;
+}
+
+.span3 {
+  color: #ee4a62;
+}
+
+.span3:hover {
+  color: #1ab69d;
+}
+
+.dsa {
+  height: 85%;
+}
+
+.clang {
+  height: 85%;
+}
+
+.dsa,
+.ml,
+.jfs,
+.ds,
+.py,
+.ja,
+.clang {
+  border: 2px solid grey;
+}
+
+.grid {
+  background-color: #f4f4f4;
+}
+
+.span4 {
+  color: #1ab69d;
+}
+
+.cl2 {
+  margin-top: -2%;
+  font-size: 20px;
+}
+
+.sft {
+  margin-left: 5%;
+}
+
+.companies {
+  text-align: center;
+  font-size: 35px;
+}
+
+.span5 {
+  color: #1ab69d;
+}
+
+.sec3 {
+  margin-top: 5%;
+}
+
+.img1:hover {
+  transform: scale(0.8);
+  transition: 2s;
+}
+
+.sec4 {
+  margin-top: 4%;
+  background-color: #f4f4f4;
+}
+
+.span6 {
+  color: #ee4a62;
+  font-weight: bold;
+}
+
+.jap {
+  text-decoration: none;
+
+
+}
+
+.para7 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn2 {
+  background-color: #1ab69d;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn2:hover {
+  background-color: #1ab69d;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+}`}
+      </style>
       <section className='sec1'>
         <div className='container'>
           <div className='row'>
@@ -20,13 +304,13 @@ const App = () => {
               <h3 className='head1'>Online & classroom <br /><span className='span1'>IT training institute (India)</span></h3>
               <p className='para1'>Codegnan offers<b> finishing schools </b>for students who want to start and grow<br />their tech career. Become job-ready with our expert trainer-led online and<br />classroom IT certification courses.</p><br />
               <ul className='list-unstyled'>
-                <li className='para2'>Expert trainers from top universities and companies</li>
-                <li className='para2'>Trained 30,000+ students</li>
-                <li className='para2'>1250+ companies have hired Codegnan learners</li>
-                <li className='para2'>Most advanced course curriculum</li>
-                <li className='para2'>Practical learning with live projects</li>
-                <li className='para2'>Career support with our job acceleration program</li>
-                <li className='para2'>Rated 4.8/5 by more than 2,200 students</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Expert trainers from top universities and companies</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Trained 30,000+ students</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>1250+ companies have hired Codegnan learners</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Most advanced course curriculum</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Practical learning with live projects</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Career support with our job acceleration program</li>
+                <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Rated 4.8/5 by more than 2,200 students</li>
               </ul>
               <button className='btn1'>Explore Program<i class="fa-solid fa-arrow-right"></i></button>
 
@@ -588,7 +872,10 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="sec5" style={{ backgroundColor: "#f4f4f4", marginTop: "5%" }}>
+      <section>
+        <Team />
+      </section>
+      <section className="sec5" style={{ backgroundColor: "#f4f4f4", marginTop: "0%" }}>
         <h1 style={{ textAlign: "center", fontSize: "35px", fontWeight: "bold", paddingTop: "5%" }}>Our training <span className='span4'>Campuses</span></h1>
         <center>
           <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" style={{}} />
@@ -631,6 +918,30 @@ const App = () => {
 
 
 
+      </section>
+      <section className='sec6'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <div class="card" style={{ backgroundColor: "#104c44", height: "300px", marginTop: "5%" }}>
+                <div class="card-body">
+                  <div className="row">
+                    <div className="col-12">
+                      <h1 style={{ color: "white", fontSize: "35px", fontWeight: "bold" }}>Still have questions regarding questions ?</h1>
+                    </div>
+                    <div className="col-12">
+                      <p style={{ marginTop: "3%", fontSize: "22px" }} className='para7'>Talk to our team and get support in identifying the right tech career course for you. Our team will answer your questions regarding courses, fees, batch details, and all.</p>
+                    </div>
+                    <div className='col-12'>
+                      <button className='btn2' style={{ width: "15%", padding: "1%" }}>📞 Call Us</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </>
