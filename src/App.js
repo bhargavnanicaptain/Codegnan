@@ -154,7 +154,7 @@ body {
   margin-bottom: 1%;
 }
 
-.card1 {
+.card {
   margin-bottom: 20px;
   /* Adjust as needed */
 }
